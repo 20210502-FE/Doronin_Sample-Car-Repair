@@ -1,0 +1,25 @@
+.customers {
+    padding-top: 860px;
+    padding-bottom: 210px;
+    position: relative;
+
+    &__wrap {
+        width: 324px;
+        height: 340px;
+    }
+
+    &__contant {
+        padding: 45px 44px 52px 45px;
+        background-color: $color-white;
+    }
+
+    &__desc {
+        height: 189px;
+        margin-bottom: 18px;
+    }
+
+    &__image {
+        width: 48px;
+        height: 48px;
+    }
+}

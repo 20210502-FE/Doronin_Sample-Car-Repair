@@ -1,0 +1,73 @@
+.header {
+    height: 800px;
+    background-image: url(../../assets/images/header-bc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 26px;
+    padding-bottom: 312px;
+
+    &__top {
+        margin-bottom: 28px;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__text {
+        font-family: $font-regular, sans-serif;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.15px;
+        color: $color-white;
+        margin-right: 33px;
+        margin-left: 10px;
+
+        &_left {
+            font-family: $font-bold, sans-serif;
+        }
+
+        &_right {
+            font-family: $font-medium, sans-serif;
+        }
+    }
+
+    &__center {
+        background-color: $color-white;
+        margin-bottom: 126px;
+    }
+
+    &__nav {
+        margin: 15px 0;
+    }
+
+    &__list-left li {
+        margin-left: 40px;
+    }
+
+    &__list-right li {
+        margin-right: 40px;
+    }
+
+    &__item {
+        font-family: $font-bold, sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.15px;
+    }
+
+    &__item a {
+        color: $color-blu;
+    }
+
+    &__title {
+        font-family: $font-bolder, sans-serif;
+        font-size: 56px;
+        line-height: 56px;
+        color: $color-white;
+        max-width: 583px;
+        margin-bottom: 48px;
+    }
+}

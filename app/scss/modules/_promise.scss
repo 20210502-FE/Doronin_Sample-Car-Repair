@@ -1,0 +1,18 @@
+.promise {
+    padding-top:850px;
+    padding-bottom: 121px;
+
+    &__content {
+        margin-top: 68.5px;
+
+        & img {
+            width: 63px;
+            height: 63px;
+            margin-right: 23px;
+        }
+    }
+
+    &__headline {
+        margin-bottom: 20px;
+    }
+}

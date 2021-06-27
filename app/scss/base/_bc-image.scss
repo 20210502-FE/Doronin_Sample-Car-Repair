@@ -1,0 +1,37 @@
+.bc__image {
+    opacity: 0.55;
+    width: 642px;
+    height: 450px;
+    position: absolute;
+
+    &_up {
+      top: 0;
+      right: 0;
+    }
+
+    &_up-left {
+      top: 0;
+      left: 0;
+      opacity: 0.45
+    }
+
+    &_down {
+      right: 0;
+      bottom: 0;
+    }
+
+    &_down-left {
+      left: 0;
+      bottom: 0;
+    }
+
+    &_bottom-78 {
+      bottom: 78px;
+    }
+
+    &_bottom-554 {
+      left: -5px;
+      bottom: 554px;
+      z-index: -1;
+    }
+  }

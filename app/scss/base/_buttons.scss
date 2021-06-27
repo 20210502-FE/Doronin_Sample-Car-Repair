@@ -1,0 +1,51 @@
+.button {
+    font-family: $font-bold, sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: $color-white;
+    text-transform: uppercase;
+    background-color: $color-milano-red;
+    border-radius: 2px;
+    border: 1px solid $color-milano-red;
+    min-width: 211px;
+    text-align: end;
+
+    &_small {
+        min-width: 145px;
+    }
+
+    &__wrapper {
+        margin-top: 42px;
+        text-align: center;
+    }
+
+    &__arrow-down {
+        border: none;
+        background-color: $color-white;
+        margin-left: 5px;
+    }
+
+    &__arrow {
+        border: none;
+        background-color: transparent;
+    
+        &_left img {
+            position: relative;
+            top: -2px;
+            left: 2px;
+        }
+    
+        &_bc-wild-sand {
+            background-color: $color-wild-sand;
+        }
+    }
+
+    &__play {
+        max-width: 140px;
+        max-height: 140px;
+        border: none;
+        background-color: transparent;
+    }
+}
+

@@ -1,0 +1,18 @@
+.bottom {
+    padding-top: 23.3px;
+    padding-bottom: 18.7px;
+    background-color: $color-blu;
+
+    &__wrapper {
+        margin: 0 auto;
+        max-width: 1080px;
+    }
+
+    &__text {
+        font-family: $font-regular, sans-serif;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.15px;
+        color: $color-dusty-gray;
+    }
+}

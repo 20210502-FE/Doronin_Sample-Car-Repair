@@ -1,0 +1,55 @@
+.impact {
+    height: 608px;
+    background-image: url(../../assets/images/impact-bc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 111px;
+    padding-bottom: 189px;
+    position: relative;
+
+    &__image {
+        position: absolute;
+        top: -72px;
+        right: 210px;
+    }
+
+    &__inner {
+        margin-top: 32px;
+        margin-bottom: 76px;
+        max-width: 411px;
+    }
+
+    &__block {
+        // height: 76px;
+        width: 237px;
+
+        & img {
+            width: 76px;
+            height: 76px;
+        }
+    }
+
+    &__content {
+        margin-left: 12px;
+    }
+
+    &__box {
+        padding-top: 43px;
+        padding-bottom: 48px;
+        background-color: $color-white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -75px;
+    }
+}
+
+.box__title {
+    font-family: $font-bolder, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    color: $color-blu;
+    max-width: 562px;
+    margin-left: 70px;
+    margin-right: 101px;
+}

@@ -1,0 +1,78 @@
+.footer {
+    padding-top: 160px;
+    padding-bottom: 98px;
+
+    &__text {
+        font-family: $font-regular, sans-serif;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.15px;
+        color: $color-tundora;
+        max-width: 235px;
+        margin-top: 23px;
+        margin-bottom: 35px;
+
+        &_subtitle {
+            font-family: $font-bold, sans-serif;
+            margin-top: 11px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__social a {
+        max-height: 24px;
+        margin-right: 19px;
+    }
+
+    &__center {
+        margin-left: 124px;
+    }
+
+    &__nav {
+        max-width: 356px;
+        margin: 0 -18.5px;
+
+        &_right {
+            margin: 0;
+        }
+    }
+
+    &__item {
+        margin-bottom: 13px;
+        padding: 0 18.5px;
+
+        & a {
+            font-family: $font-bold, sans-serif;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.15px;
+            color: $color-tundora;
+        }
+
+        &_right {
+            font-family: $font-regular, sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.15px;
+            color: $color-tundora;
+            margin-bottom: 16px;
+            padding: 0;
+
+            & a {
+                width: 16px;
+                height: 16px;
+                margin-right: 18px;
+            }
+
+            & img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    &__right {
+        margin-left: 68px;
+        max-width: 237px;
+    }
+}
