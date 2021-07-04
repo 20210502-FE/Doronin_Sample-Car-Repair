@@ -6,13 +6,37 @@
     padding-top: 26px;
     padding-bottom: 312px;
 
-    &__top {
-        margin-bottom: 28px;
+    @include respond-to(phone-only) {
+        height: 570px;
+        padding-top: 20px;
+        padding-bottom: 50px;
     }
 
-    &__icon {
+    &__top {
+        margin-bottom: 28px;
+
+        @include respond-to(phone-only) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__button {
         width: 24px;
         height: 24px;
+        background-color: transparent;
+        border: none;
+
+        @include respond-to(phone-only) {
+            display: none;
+        }
+
+        &-botoom {
+
+            @include respond-to(phone-only) {
+               display: flex;
+               justify-content: center;
+            }
+        }
     }
 
     &__text {
@@ -23,6 +47,10 @@
         color: $color-white;
         margin-right: 33px;
         margin-left: 10px;
+
+        @include respond-to(phone-only) {
+            display: none;
+        }
 
         &_left {
             font-family: $font-bold, sans-serif;
@@ -36,18 +64,101 @@
     &__center {
         background-color: $color-white;
         margin-bottom: 126px;
+
+        @include respond-to(phone-only) {
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: flex-end;
+            margin-bottom: 10px;
+        }
+
+        & input {
+            display: none;
+
+            &:checked {
+                & + label {
+                    & > .header__label-menu {
+                        display: none;
+                    }
+
+                    & > .header__label-cross {
+                        display: flex;
+                    }
+                }
+
+                & ~ .header__nav {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    &__label {
+        display: none;
+        position: relative;
+        right: -22px;
+
+        &-menu {
+            width: 24px;
+            height: 24px;
+        }
+
+        &-cross {
+            width: 24px;
+            height: 24px;
+
+            @include respond-to(phone-only) {
+                display: none;
+            }
+        }
+
+        @include respond-to(phone-only) {
+            display: flex;
+        }
     }
 
     &__nav {
         margin: 15px 0;
+
+        @include respond-to(phone-only) {
+            margin: 0;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    &__list {
+        @include respond-to(phone-only) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__list-right {
+        flex-direction: row;
     }
 
     &__list-left li {
         margin-left: 40px;
+
+        @include respond-to(phone-only) {
+            margin-left: 0;
+        }
     }
 
     &__list-right li {
         margin-right: 40px;
+
+        @include respond-to(phone-only) {
+            margin-right: 11px;
+            width: 24px;
+            height: 24px;
+            
+        }
     }
 
     &__item {
@@ -56,10 +167,21 @@
         line-height: 22px;
         text-align: center;
         letter-spacing: 0.15px;
+
+        @include respond-to(phone-only) {
+            margin: 5px 0;
+            font-size: 13px;
+            line-height: 12px;
+        }
     }
 
     &__item a {
         color: $color-blu;
+
+        @include respond-to(phone-only) {
+            color: $color-white;
+            filter: brightness(10);
+        }
     }
 
     &__title {
@@ -69,5 +191,13 @@
         color: $color-white;
         max-width: 583px;
         margin-bottom: 48px;
+
+        @include respond-to(phone-only) {
+            font-size: 40px;
+            line-height: 40px;
+            max-width: 100%;
+            margin-bottom: 30px;
+            text-align: center;
+        }
     }
 }

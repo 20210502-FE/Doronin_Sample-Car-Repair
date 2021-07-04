@@ -7,21 +7,40 @@
     padding-bottom: 189px;
     position: relative;
 
+    @include respond-to(phone-only) {
+        height: auto;
+        padding-top: 80px;
+        padding-bottom: 150px;
+    }
+
     &__image {
         position: absolute;
         top: -72px;
         right: 210px;
+
+        @include respond-to(phone-only) {
+            width: calc(100% - 50%);
+            top: -82px;
+            right: 0;
+        }
     }
 
     &__inner {
         margin-top: 32px;
         margin-bottom: 76px;
         max-width: 411px;
+
+        @include respond-to(phone-only) {
+            margin: 32px auto 76px;
+        }
     }
 
     &__block {
-        // height: 76px;
         width: 237px;
+
+        @include respond-to(phone-only) {
+            margin-bottom: 15px;
+        }
 
         & img {
             width: 76px;
@@ -31,6 +50,10 @@
 
     &__content {
         margin-left: 12px;
+
+        @include respond-to(phone-only) {
+            width: 100%;
+        }
     }
 
     &__box {
@@ -41,6 +64,15 @@
         left: 0;
         right: 0;
         bottom: -75px;
+
+        @include respond-to(phone-only) {
+            padding-top: 30px;
+            padding-bottom: 30px;    
+            left: 0;
+            right: 0;
+            bottom: -75px;
+            justify-content: center;
+        }
     }
 }
 
@@ -52,4 +84,11 @@
     max-width: 562px;
     margin-left: 70px;
     margin-right: 101px;
+
+    @include respond-to(phone-only) {
+        max-width: calc(100% - 20%);
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
 }

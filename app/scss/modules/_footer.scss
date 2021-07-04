@@ -2,6 +2,25 @@
     padding-top: 160px;
     padding-bottom: 98px;
 
+    @include respond-to(phone-only) {
+        padding-top: 120px;
+        padding-bottom: 40px;
+    }
+
+    &__wrap {
+
+        @include respond-to(phone-only) {
+            justify-content: space-around;
+        }
+    }
+
+    &__left {
+
+        @include respond-to(phone-only) {
+            margin-bottom: 20px;
+        }
+    }
+
     &__text {
         font-family: $font-regular, sans-serif;
         font-size: 14px;
@@ -12,10 +31,21 @@
         margin-top: 23px;
         margin-bottom: 35px;
 
+        @include respond-to(phone-only) {
+            margin-top: 23px;
+            margin-bottom: 17px;
+        }
+
         &_subtitle {
             font-family: $font-bold, sans-serif;
             margin-top: 11px;
             margin-bottom: 30px;
+
+            @include respond-to(phone-only) {
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+
         }
     }
 
@@ -26,11 +56,22 @@
 
     &__center {
         margin-left: 124px;
+
+        @include respond-to(phone-only) {
+            width: 235px;
+            margin-left: 0;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
     }
 
     &__nav {
         max-width: 356px;
         margin: 0 -18.5px;
+
+        @include respond-to(phone-only) {
+            max-width: 300px;
+        }
 
         &_right {
             margin: 0;
@@ -74,5 +115,9 @@
     &__right {
         margin-left: 68px;
         max-width: 237px;
+
+        @include respond-to(phone-only) {
+            margin-left: 0;
+        }
     }
 }

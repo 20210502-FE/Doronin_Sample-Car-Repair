@@ -6,6 +6,10 @@
     &__wrapper {
         margin: 0 auto;
         max-width: 1080px;
+
+        @include respond-to(phone-only) {
+            text-align: center;
+        }
     }
 
     &__text {

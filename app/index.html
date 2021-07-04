@@ -17,12 +17,16 @@
             </div>
             <div class="flex">
                 <div class="flex">
-                    <img class="header__icon" src="assets/icons/header-time.png" alt="time">
+                    <button type="button" class="header__button">
+                        <img class="header__icon" src="assets/icons/header-time.png" alt="time">
+                    </button>
                     <div class="header__text header__text_left"> SERVICE HOURS <p>Mon - Sat: 7:00 am - 6:00 pm</p>
                     </div>
                 </div>
                 <div class="flex">
-                    <img class="header__icon" src="assets/icons/header-phone.png" alt="phone">
+                    <button type="button" class="header__button">
+                        <img class="header__icon" src="assets/icons/header-phone.png" alt="phone">
+                    </button>
                     <div class="header__text header__text_right">CALL US <p>(555) Car-Repair</p>
                     </div>
                 </div>
@@ -31,6 +35,11 @@
             </div>
         </div>
         <div class="header__center wrapper flex flex_aling-center flex_content-between">
+            <input type="checkbox" id="header__center">
+            <label class="header__label" for="header__center">
+                <span class="header__label-menu"><img src="assets/icons/menu-icon.png" alt="menu"></span>
+                <span class="header__label-cross"><img src="assets/icons/cross-icon.png" alt="cross"></span>
+            </label>
             <nav class="header__nav">
                 <ul class="header__list header__list-left flex">
                     <li class="header__item">
@@ -60,8 +69,10 @@
         </div>
         <div class="wrapper">
             <h1 class="header__title">Top notch service is our main auto motive</h1>
-            <button type="button" class="button">Make an Appointment<img class="icon__arrow icon__arrow_big"
-                    src="assets/icons/button-arrow.png" alt="arrow"></button>
+            <div class="header__button-botoom">
+                <button type="button" class="button">Make an Appointment<img class="icon__arrow icon__arrow_big"
+                        src="assets/icons/button-arrow.png" alt="arrow"></button>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -103,30 +114,33 @@
                     <h2 class="heading">Sed perspiciatis omnis iste natus</h2>
                 </div>
                 <div class="promise__content flex flex_wrap flex_content-between">
-                    <div class="flex column">
+                    <div class="flex column promise__inner">
                         <img src="assets/icons/hand-diamond-icon.png" alt="diamond">
                         <div>
                             <h4 class="headline promise__headline">Quality service. Everytime.</h4>
-                            <div class="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            <div class="desc promise__desc">At vero eos et accusamus et iusto odio dignissimos ducimus
+                                qui blanditiis
                                 praesentium corrupti quos dolores et quas.
                             </div>
                         </div>
                     </div>
-                    <div class="flex column">
+                    <div class="flex column promise__inner">
                         <img src="assets/icons/shield-icon.png" alt="shield">
                         <div>
                             <h4 class="headline promise__headline">Services by certified pros</h4>
-                            <div class="desc">Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+                            <div class="desc promise__desc">Dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                                velit, sed quia
                                 non
                                 numquam eius modi tempora incidunt.
                             </div>
                         </div>
                     </div>
-                    <div class="flex column">
+                    <div class="flex column promise__inner">
                         <img src="assets/icons/handshake-icon.png" alt="handshake">
                         <div>
                             <h4 class="headline promise__headline">Real people. Honest work.</h4>
-                            <div class="desc">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+                            <div class="desc promise__desc">Quis autem vel eum iure reprehenderit qui in ea voluptate
+                                velit esse quam
                                 nihil molestiae consequatur illum.
                             </div>
                         </div>
@@ -159,7 +173,7 @@
                     <h2 class="heading services__heading">Sed perspiciatis omnis iste natus</h2>
                 </div>
             </div>
-            <div class="wrapper flex flex_wrap flex_content-between">
+            <div class="wrapper services__wrap flex flex_wrap flex_content-between">
                 <div class="services__inner">
                     <article class="services__content">
                         <img src="assets/icons/car-bay-icon.png" alt="car bay">
@@ -224,14 +238,14 @@
             </div>
         </section>
         <section class="contacts">
-            <div class="wrapper flex">
+            <div class="wrapper flex flex_wrap">
                 <div class="bc__image bc__image_up">
                     <img src="assets/images/gears-up.png" alt="gears">
                 </div>
                 <div class="contacts__box">
                     <h2 class="heading">Make an appointment</h2>
                     <div class="contacts__contant">
-                        <form action="" class="flex flex_wrap flex_content-between">
+                        <form action="" class="contacts__form flex flex_wrap flex_content-between">
                             <input class="input flex_basis-50" type="text" name="name" placeholder="Name">
                             <input class="input flex_basis-50" type="email" name="email" placeholder="Email">
                             <input class="input flex_basis-50" type="tel" name="phone" placeholder="Phone Number">
@@ -265,17 +279,15 @@
                 <div class="banner__row">
                     <h2 class="heading">Check out our hard workers</h2>
                 </div>
-                <div>
-                    <nav class="banner__nav" id="banner-bottom">
-                        <ul class="banner__list flex flex_content-evenly">
-                            <li class="banner__item"><a href="#banner-bottom">Gallery</a></li>
-                            <li class="banner__item"><a href="#banner-bottom">Live stream: Bay 1</a></li>
-                            <li class="banner__item"><a href="#banner-bottom">Live stream: Bay 2</a></li>
-                            <li class="banner__item"><a href="#banner-bottom">Live stream: Bay 3</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="banner__image">
+                <nav class="banner__nav">
+                    <ul class="banner__list flex flex_content-evenly">
+                        <li class="banner__item"><a href="">Gallery</a></li>
+                        <li class="banner__item"><a href="">Live stream: Bay 1</a></li>
+                        <li class="banner__item"><a href="">Live stream: Bay 2</a></li>
+                        <li class="banner__item"><a href="">Live stream: Bay 3</a></li>
+                    </ul>
+                </nav>
+                <div class="banner__image banner__image_bottom">
                     <img src="assets/images/banner-bottom-image.png" alt="inspection">
                 </div>
             </section>
@@ -284,8 +296,8 @@
             <div class="bc__image bc__image_down-left bc__image_bottom-554">
                 <img src="assets/images/gears-down.png" alt="gears">
             </div>
-            <div class="wrapper flex flex_content-between flex_wrap">
-                <div class="customers__wrap">
+            <div class="customers__box wrapper flex flex_content-between flex_wrap">
+                <div class="customers__wrap customers__wrap_small">
                     <div class="flex row">
                         <button type="button" class="button__arrow button__arrow_left button__arrow_bc-wild-sand"><img
                                 src="assets/icons/button-arrow-left.png" alt="arrow left"></button>
@@ -366,7 +378,7 @@
                     </div>
                 </div>
             </div>
-            <div class="wrapper impact__box flex">
+            <div class="wrapper impact__box flex flex_wrap">
                 <div class="box__title">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
                 <div>
                     <button type="button" class="button">Make an Appointment<img class="icon__arrow icon__arrow_big"
@@ -376,7 +388,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="wrapper flex flex_wrap flex_content-between">
+        <div class="footer__wrap wrapper flex flex_wrap flex_content-between">
             <div class="footer__left">
                 <div class="logo">
                     <img src="assets/images/footer-logo.png" alt="logoipsum">

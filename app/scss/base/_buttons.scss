@@ -11,18 +11,33 @@
     min-width: 211px;
     text-align: end;
 
+    @include respond-to(phone-only) {
+        font-size: 8px;
+        line-height: 16px;
+        min-width: 50px;
+        padding-left: 2px;
+    }
+
     &_small {
         min-width: 145px;
+
+        @include respond-to(phone-only) {
+            min-width: 50px;
+        }
     }
 
     &__wrapper {
         margin-top: 42px;
         text-align: center;
+
+        @include respond-to(phone-only) {
+            margin-top: 16px;
+        }
     }
 
     &__arrow-down {
         border: none;
-        background-color: $color-white;
+        background-color: transparent;
         margin-left: 5px;
     }
 

@@ -1,17 +1,29 @@
 .banner {
-    background-color: $color-white;
 
     &__top {
         padding-bottom: 354px;
+
+        @include respond-to(phone-only) {
+            padding-bottom: 80px;
+        }
     }
     
     &__inner {
         margin-left: 87px;
         margin-bottom: 36px;
+
+        @include respond-to(phone-only) {
+            margin-left: 0;
+            margin-bottom: 20px;
+        }
     }
     
     &__text {
         margin-left: 87px;
         max-width: 846px;
+
+        @include respond-to(phone-only) {
+            margin: 0 10px;
+        }
     }    
 }

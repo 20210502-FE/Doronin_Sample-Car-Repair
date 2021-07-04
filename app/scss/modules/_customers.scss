@@ -3,9 +3,32 @@
     padding-bottom: 210px;
     position: relative;
 
+    @include respond-to(phone-only) {
+        padding-top: 480px;
+        padding-bottom: 100px;
+    }
+
+    &__box {
+
+        @include respond-to(phone-only) {
+            justify-content: space-evenly;
+        }
+    }
+
     &__wrap {
         width: 324px;
         height: 340px;
+
+        @include respond-to(phone-only) {
+            margin-bottom: 20px;
+        }
+
+        &_small {
+
+            @include respond-to(phone-only) {
+                height: 200px;
+            }
+        }
     }
 
     &__contant {

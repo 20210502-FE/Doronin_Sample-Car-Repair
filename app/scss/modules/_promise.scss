@@ -2,8 +2,18 @@
     padding-top:850px;
     padding-bottom: 121px;
 
+    @include respond-to(phone-only) {
+        padding-top: 490px;
+        padding-bottom: 20px;
+    }
+
     &__content {
         margin-top: 68.5px;
+
+        @include respond-to(phone-only) {
+            margin-top: 48.5px;
+            justify-content: space-evenly;
+        }
 
         & img {
             width: 63px;
@@ -12,7 +22,21 @@
         }
     }
 
+    &__inner {
+ 
+        @include respond-to(phone-only) {
+            margin-bottom: 20px;
+        }
+    }
+
     &__headline {
         margin-bottom: 20px;
+    }
+
+    &__desc {
+
+        @include respond-to(phone-only) {
+            text-align: start;
+        } 
     }
 }
