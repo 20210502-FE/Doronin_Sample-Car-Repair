@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header wrapper">
         <div class="header__top wrapper flex flex_aling-center flex_content-between">
             <div class="logo flex">
                 <img src="assets/images/logo.png" alt="logoipsum">
@@ -41,7 +41,7 @@
                 <span class="header__label-cross"><img src="assets/icons/cross-icon.png" alt="cross"></span>
             </label>
             <nav class="header__nav">
-                <ul class="header__list header__list-left flex">
+                <ul class="header__list header__list_left flex">
                     <li class="header__item">
                         <a href="#">Services</a>
                         <button type="button" class="button__arrow-down"><img src="assets/icons/button-arrow-down.png"
@@ -58,7 +58,7 @@
                 </ul>
             </nav>
             <nav class="header__nav">
-                <ul class="header__list header__list-right flex">
+                <ul class="header__list header__list_right flex">
                     <li class="header__item"><a href="#"><img class="header__icon" src="assets/icons/search-icon.png"
                                 alt="search"></a></li>
                     <li class="header__item"><a href="#"><img class="header__icon"
@@ -67,42 +67,46 @@
                 </ul>
             </nav>
         </div>
+    </header>
+    <div class="container">
         <div class="wrapper">
-            <h1 class="header__title">Top notch service is our main auto motive</h1>
-            <div class="header__button-botoom">
+            <h1 class="container__title">Top notch service is our main auto motive</h1>
+            <div class="container__button">
                 <button type="button" class="button">Make an Appointment<img class="icon__arrow icon__arrow_big"
                         src="assets/icons/button-arrow.png" alt="arrow"></button>
             </div>
         </div>
-    </header>
+    </div>
     <main class="main">
-        <section class="banner banner__top wrapper">
-            <div class="bc__image bc__image_up">
-                <img src="assets/images/gears-up.png" alt="gears">
-            </div>
-            <div class="flex banner__subtitle">
-                <button type="button" class="button__arrow button__arrow_left"><img
-                        src="assets/icons/button-arrow-left.png" alt="arrow left"></button>
-                <button type="button" class="button__arrow button__arrow_right"><img
-                        src="assets/icons/button-arrow-right.png" alt="arrow right"></button>
-                <h3 class="subtitle">Who we are</h3>
-            </div>
-            <div class="banner__inner">
-                <h2 class="heading">Nemo enim ipsam voluptatem quia voluptas in proident</h2>
-            </div>
-            <div class="banner__text">
-                <div class="desc">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-                    laboriosam, nisi ut
-                    aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit
-                    esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+        <section class="promise">
+            <div class="banner banner__top wrapper">
+                <div class="bc__image bc__image_up">
+                    <img src="assets/images/gears-up.png" alt="gears">
+                </div>
+                <div class="flex banner__subtitle">
+                    <button type="button" class="button__arrow button__arrow_left"><img
+                            src="assets/icons/button-arrow-left.png" alt="arrow left"></button>
+                    <button type="button" class="button__arrow button__arrow_right"><img
+                            src="assets/icons/button-arrow-right.png" alt="arrow right"></button>
+                    <h3 class="subtitle">Who we are</h3>
+                </div>
+                <div class="banner__inner">
+                    <h2 class="heading">Nemo enim ipsam voluptatem quia voluptas in proident</h2>
+                </div>
+                <div class="banner__text">
+                    <div class="desc">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                        laboriosam, nisi ut
+                        aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate
+                        velit
+                        esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+                        pariatur.
+                    </div>
+                </div>
+                <div class="banner__image">
+                    <img src="assets/images/banner-top-image.png" alt="motor">
                 </div>
             </div>
-            <div class="banner__image">
-                <img src="assets/images/banner-top-image.png" alt="motor">
-            </div>
-        </section>
-        <section class="promise">
-            <div class="wrapper">
+            <div class="wrapper promise__holder">
                 <div class="flex row">
                     <button type="button" class="button__arrow button__arrow_left button__arrow_bc-wild-sand"><img
                             src="assets/icons/button-arrow-left.png" alt="arrow left"></button>
@@ -268,7 +272,9 @@
             <div class="bc__image bc__image_down-left bc__image_bottom-78">
                 <img src="assets/images/gears-down.png" alt="gears">
             </div>
-            <section class="banner banner__bottom wrapper">
+        </section>
+        <section class="customers">
+            <div class="banner banner__bottom wrapper">
                 <div class="flex banner__subtitle">
                     <button type="button" class="button__arrow button__arrow_left"><img
                             src="assets/icons/button-arrow-left.png" alt="arrow left"></button>
@@ -281,18 +287,16 @@
                 </div>
                 <nav class="banner__nav">
                     <ul class="banner__list flex flex_content-evenly">
-                        <li class="banner__item"><a href="">Gallery</a></li>
-                        <li class="banner__item"><a href="">Live stream: Bay 1</a></li>
-                        <li class="banner__item"><a href="">Live stream: Bay 2</a></li>
-                        <li class="banner__item"><a href="">Live stream: Bay 3</a></li>
+                        <li class="banner__item"><a href="#">Gallery</a></li>
+                        <li class="banner__item"><a href="#">Live stream: Bay 1</a></li>
+                        <li class="banner__item"><a href="#">Live stream: Bay 2</a></li>
+                        <li class="banner__item"><a href="#">Live stream: Bay 3</a></li>
                     </ul>
                 </nav>
                 <div class="banner__image banner__image_bottom">
                     <img src="assets/images/banner-bottom-image.png" alt="inspection">
                 </div>
-            </section>
-        </section>
-        <section class="customers">
+            </div>
             <div class="bc__image bc__image_down-left bc__image_bottom-554">
                 <img src="assets/images/gears-down.png" alt="gears">
             </div>

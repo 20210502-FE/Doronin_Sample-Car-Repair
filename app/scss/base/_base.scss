@@ -67,10 +67,8 @@
   .banner {
     padding-top: 100px;
     background-color: $color-white;
-    position: absolute;
-    top: -78px;
-    left: 0;
-    right: 0;
+    position: relative;
+    top: -80px;
 
     @include respond-to(phone-only) {
       padding-top: 50px;

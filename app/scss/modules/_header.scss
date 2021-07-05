@@ -1,16 +1,8 @@
 .header {
-    height: 800px;
-    background-image: url(../../assets/images/header-bc.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 26px;
-    padding-bottom: 312px;
-
-    @include respond-to(phone-only) {
-        height: 570px;
-        padding-top: 20px;
-        padding-bottom: 50px;
-    }
+    position: absolute;
+    top: 28px;
+    left: 0;
+    right: 0;
 
     &__top {
         margin-bottom: 28px;
@@ -28,14 +20,6 @@
 
         @include respond-to(phone-only) {
             display: none;
-        }
-
-        &-botoom {
-
-            @include respond-to(phone-only) {
-               display: flex;
-               justify-content: center;
-            }
         }
     }
 
@@ -63,7 +47,6 @@
 
     &__center {
         background-color: $color-white;
-        margin-bottom: 126px;
 
         @include respond-to(phone-only) {
             background-color: transparent;
@@ -71,7 +54,6 @@
             flex-direction: column;
             flex-wrap: wrap;
             align-content: flex-end;
-            margin-bottom: 10px;
         }
 
         & input {
@@ -138,11 +120,11 @@
         }
     }
 
-    &__list-right {
+    &__list_right {
         flex-direction: row;
     }
 
-    &__list-left li {
+    &__list_left li {
         margin-left: 40px;
 
         @include respond-to(phone-only) {
@@ -150,7 +132,7 @@
         }
     }
 
-    &__list-right li {
+    &__list_right li {
         margin-right: 40px;
 
         @include respond-to(phone-only) {
@@ -181,23 +163,6 @@
         @include respond-to(phone-only) {
             color: $color-white;
             filter: brightness(10);
-        }
-    }
-
-    &__title {
-        font-family: $font-bolder, sans-serif;
-        font-size: 56px;
-        line-height: 56px;
-        color: $color-white;
-        max-width: 583px;
-        margin-bottom: 48px;
-
-        @include respond-to(phone-only) {
-            font-size: 40px;
-            line-height: 40px;
-            max-width: 100%;
-            margin-bottom: 30px;
-            text-align: center;
         }
     }
 }
