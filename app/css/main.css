@@ -89,25 +89,25 @@ img {
   }
 }
 
-.icon__arrow {
+.arrow {
   max-width: 43px;
   vertical-align: middle;
   margin-left: 7px;
 }
 
 @media only screen and (max-width: 599px) {
-  .icon__arrow {
+  .arrow {
     max-width: 26px;
     margin-left: 0;
   }
 }
 
-.icon__arrow_big {
+.arrow_big {
   max-width: 49px;
 }
 
 @media only screen and (max-width: 599px) {
-  .icon__arrow_big {
+  .arrow_big {
     max-width: 30px;
   }
 }
@@ -430,16 +430,7 @@ img {
   top: 28px;
   left: 0;
   right: 0;
-}
-
-.header__top {
-  margin-bottom: 28px;
-}
-
-@media only screen and (max-width: 599px) {
-  .header__top {
-    margin-bottom: 10px;
-  }
+  z-index: 1;
 }
 
 .header__button {
@@ -479,12 +470,16 @@ img {
   font-family: "Roboto Medium", sans-serif;
 }
 
-.header__center {
+.holder {
   background-color: #FFFFFF;
+  position: absolute;
+  top: 94px;
+  left: 0;
+  right: 0;
 }
 
 @media only screen and (max-width: 599px) {
-  .header__center {
+  .holder {
     background-color: transparent;
     display: flex;
     flex-direction: column;
@@ -493,57 +488,57 @@ img {
   }
 }
 
-.header__center input {
+.holder input {
   display: none;
 }
 
-.header__center input:checked + label > .header__label-menu {
+.holder input:checked + label > .header__label-menu {
   display: none;
 }
 
-.header__center input:checked + label > .header__label-cross {
+.holder input:checked + label > .header__label-cross {
   display: flex;
 }
 
-.header__center input:checked ~ .header__nav {
+.holder input:checked ~ .header__nav {
   opacity: 1;
   visibility: visible;
 }
 
-.header__label {
+.holder__label {
   display: none;
   position: relative;
   right: -22px;
 }
 
-.header__label-menu {
+.holder__label-menu {
   width: 24px;
   height: 24px;
 }
 
-.header__label-cross {
+.holder__label-cross {
   width: 24px;
   height: 24px;
 }
 
 @media only screen and (max-width: 599px) {
-  .header__label-cross {
+  .holder__label-cross {
     display: none;
   }
 }
 
 @media only screen and (max-width: 599px) {
-  .header__label {
+  .holder__label {
     display: flex;
   }
 }
 
-.header__nav {
+.holder__nav {
   margin: 15px 0;
 }
 
 @media only screen and (max-width: 599px) {
-  .header__nav {
+  .holder__nav {
     margin: 0;
     opacity: 0;
     visibility: hidden;
@@ -551,40 +546,40 @@ img {
 }
 
 @media only screen and (max-width: 599px) {
-  .header__list {
+  .holder__list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 }
 
-.header__list_right {
+.holder__list_right {
   flex-direction: row;
 }
 
-.header__list_left li {
+.holder__list_left li {
   margin-left: 40px;
 }
 
 @media only screen and (max-width: 599px) {
-  .header__list_left li {
+  .holder__list_left li {
     margin-left: 0;
   }
 }
 
-.header__list_right li {
+.holder__list_right li {
   margin-right: 40px;
 }
 
 @media only screen and (max-width: 599px) {
-  .header__list_right li {
+  .holder__list_right li {
     margin-right: 11px;
     width: 24px;
     height: 24px;
   }
 }
 
-.header__item {
+.holder__item {
   font-family: "Roboto Bold", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -593,19 +588,19 @@ img {
 }
 
 @media only screen and (max-width: 599px) {
-  .header__item {
+  .holder__item {
     margin: 5px 0;
     font-size: 13px;
     line-height: 12px;
   }
 }
 
-.header__item a {
+.holder__item a {
   color: #02133C;
 }
 
 @media only screen and (max-width: 599px) {
-  .header__item a {
+  .holder__item a {
     color: #FFFFFF;
     filter: brightness(10);
   }
@@ -1153,6 +1148,12 @@ img {
   }
 }
 
+@media only screen and (max-width: 599px) {
+  .impact__holder {
+    justify-content: center;
+  }
+}
+
 .impact__block {
   width: 237px;
 }
@@ -1330,14 +1331,24 @@ img {
 }
 
 .footer__item_right a {
-  width: 16px;
-  height: 16px;
-  margin-right: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .footer__item_right img {
+  margin-right: 21px;
   width: 16px;
   height: 16px;
+}
+
+.footer__item_right p {
+  margin-left: 37px;
+}
+
+.footer__item_bold {
+  font-family: "Roboto Bold", sans-serif;
+  line-height: 22px;
 }
 
 .footer__right {

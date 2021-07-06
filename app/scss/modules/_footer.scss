@@ -82,7 +82,7 @@
         margin-bottom: 13px;
         padding: 0 18.5px;
 
-        & a {
+        a {
             font-family: $font-bold, sans-serif;
             font-size: 14px;
             line-height: 22px;
@@ -99,16 +99,26 @@
             margin-bottom: 16px;
             padding: 0;
 
-            & a {
-                width: 16px;
-                height: 16px;
-                margin-right: 18px;
+            a {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
             }
 
-            & img {
+            img {
+                margin-right: 21px;
                 width: 16px;
                 height: 16px;
             }
+
+            p {
+                margin-left: 37px;
+            }
+        }
+
+        &_bold {
+            font-family: $font-bold, sans-serif;
+            line-height: 22px;
         }
     }
 

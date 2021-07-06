@@ -35,6 +35,13 @@
         }
     }
 
+    &__holder {
+
+        @include respond-to(phone-only) {
+            justify-content: center;
+        }
+    }
+
     &__block {
         width: 237px;
 
@@ -42,7 +49,7 @@
             margin-bottom: 15px;
         }
 
-        & img {
+        img {
             width: 76px;
             height: 76px;
         }
