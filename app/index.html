@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="header wrapper">
+    <header class="header">
         <div class="header__top wrapper flex flex_aling-center flex_content-between">
             <div class="logo flex">
                 <img src="assets/images/logo.png" alt="logoipsum">
@@ -43,27 +43,27 @@
                 <span class="holder__label-cross"><img src="assets/icons/cross-icon.png" alt="cross"></span>
             </label>
             <nav class="holder__nav">
-                <ul class="holder__list holder__list_left flex">
-                    <li class="holder__item">
+                <ul class="holder__nav-list holder__nav-list_left flex">
+                    <li class="holder__nav-item">
                         <a href="#">Services</a>
                         <button type="button" class="button__arrow-down"><img src="assets/icons/button-arrow-down.png"
                                 alt="arrow down"></button>
                     </li>
-                    <li class="holder__item"><a href="#">Specials</a></li>
-                    <li class="holder__item"><a href="#">Estimates</a></li>
-                    <li class="holder__item"><a href="#">Reviews</a></li>
-                    <li class="holder__item"><a href="#">Shop</a>
+                    <li class="holder__nav-item"><a href="#">Specials</a></li>
+                    <li class="holder__nav-item"><a href="#">Estimates</a></li>
+                    <li class="holder__nav-item"><a href="#">Reviews</a></li>
+                    <li class="holder__nav-item"><a href="#">Shop</a>
                         <button type="button" class="button__arrow-down"><img src="assets/icons/button-arrow-down.png"
                                 alt="arrow down"></button>
                     </li>
-                    <li class="holder__item"><a href="#">About</a></li>
+                    <li class="holder__nav-item"><a href="#">About</a></li>
                 </ul>
             </nav>
             <nav class="holder__nav">
-                <ul class="holder__list holder__list_right flex">
-                    <li class="holder__item"><a href="#"><img class="holder__icon" src="assets/icons/search-icon.png"
-                                alt="search"></a></li>
-                    <li class="holder__item"><a href="#"><img class="holder__icon"
+                <ul class="holder__nav-list holder__nav-list_right flex">
+                    <li class="holder__nav-item"><a href="#"><img class="holder__icon"
+                                src="assets/icons/search-icon.png" alt="search"></a></li>
+                    <li class="holder__nav-item"><a href="#"><img class="holder__icon"
                                 src="assets/icons/shopping-cart-icon.png" alt="cart"></a>
                     </li>
                 </ul>
@@ -80,14 +80,14 @@
         </section>
         <section class="promise">
             <div class="banner banner__top wrapper">
-                <div class="bc__image bc__image_up">
+                <div class="bc-image bc-image_up">
                     <img src="assets/images/gears-up.png" alt="gears">
                 </div>
-                <div class="flex banner__subtitle">
-                    <button type="button" class="button__arrow button__arrow_left"><img
-                            src="assets/icons/button-arrow-left.png" alt="arrow left"></button>
-                    <button type="button" class="button__arrow button__arrow_right"><img
-                            src="assets/icons/button-arrow-right.png" alt="arrow right"></button>
+                <div class="flex flex_aling-center banner__subtitle">
+                    <div class="top-arrow">
+                        <img class="arrow__top arrow__top_left" src="assets/icons/arrow-left.png" alt="arrow left">
+                        <img class="arrow__top arrow__top_right" src="assets/icons/arrow-right.png" alt="arrow right">
+                    </div>
                     <h3 class="subtitle">Who we are</h3>
                 </div>
                 <div class="banner__inner">
@@ -107,45 +107,51 @@
                 </div>
             </div>
             <div class="wrapper promise__holder">
-                <div class="flex row">
-                    <button type="button" class="button__arrow button__arrow_left button__arrow_bc-wild-sand"><img
-                            src="assets/icons/button-arrow-left.png" alt="arrow left"></button>
-                    <button type="button" class="button__arrow button__arrow_right button__arrow_bc-wild-sand"><img
-                            src="assets/icons/button-arrow-right.png" alt="arrow right"></button>
+                <div class="flex flex_aling-center wrap">
+                    <div class="top-arrow">
+                        <img class="arrow__top arrow__top_left" src="assets/icons/arrow-left.png" alt="arrow left">
+                        <img class="arrow__top arrow__top_right" src="assets/icons/arrow-right.png" alt="arrow right">
+                    </div>
                     <h3 class="subtitle ">OUR PROMISE TO YOU</h3>
                 </div>
-                <div>
-                    <h2 class="heading">Sed perspiciatis omnis iste natus</h2>
-                </div>
+                <h2 class="heading">Sed perspiciatis omnis iste natus</h2>
                 <div class="promise__content flex flex_wrap flex_content-between">
-                    <div class="flex column promise__inner">
-                        <img src="assets/icons/hand-diamond-icon.png" alt="diamond">
-                        <div>
-                            <h4 class="headline promise__headline">Quality service. Everytime.</h4>
-                            <div class="desc promise__desc">At vero eos et accusamus et iusto odio dignissimos ducimus
-                                qui blanditiis
-                                praesentium corrupti quos dolores et quas.
+                    <div class="promise__inner">
+                        <div class="flex column">
+                            <img src="assets/icons/hand-diamond-icon.png" alt="diamond">
+                            <div>
+                                <h4 class="headline promise__headline">Quality service. Everytime.</h4>
+                                <div class="desc promise__desc">At vero eos et accusamus et iusto odio dignissimos
+                                    ducimus
+                                    qui blanditiis
+                                    praesentium corrupti quos dolores et quas.
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="flex column promise__inner">
-                        <img src="assets/icons/shield-icon.png" alt="shield">
-                        <div>
-                            <h4 class="headline promise__headline">Services by certified pros</h4>
-                            <div class="desc promise__desc">Dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                                velit, sed quia
-                                non
-                                numquam eius modi tempora incidunt.
+                    <div class="promise__inner">
+                        <div class="flex column">
+                            <img src="assets/icons/shield-icon.png" alt="shield">
+                            <div>
+                                <h4 class="headline promise__headline">Services by certified pros</h4>
+                                <div class="desc promise__desc">Dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                                    velit, sed quia
+                                    non
+                                    numquam eius modi tempora incidunt.
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="flex column promise__inner">
-                        <img src="assets/icons/handshake-icon.png" alt="handshake">
-                        <div>
-                            <h4 class="headline promise__headline">Real people. Honest work.</h4>
-                            <div class="desc promise__desc">Quis autem vel eum iure reprehenderit qui in ea voluptate
-                                velit esse quam
-                                nihil molestiae consequatur illum.
+                    <div class="promise__inner">
+                        <div class="flex column">
+                            <img src="assets/icons/handshake-icon.png" alt="handshake">
+                            <div>
+                                <h4 class="headline promise__headline">Real people. Honest work.</h4>
+                                <div class="desc promise__desc">Quis autem vel eum iure reprehenderit qui in ea
+                                    voluptate
+                                    velit esse quam
+                                    nihil molestiae consequatur illum.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -163,87 +169,117 @@
         </section>
         <section class="services">
             <div class="wrapper">
-                <div class="flex row">
-                    <div class="bc__image bc__image_up-left">
+                <div class="flex flex_aling-center wrap">
+                    <div class="bc-image bc-image_up-left">
                         <img src="assets/images/gears-up-left.png" alt="gears">
                     </div>
-                    <button type="button" class="button__arrow button__arrow_left button__arrow_bc-wild-sand"><img
-                            src="assets/icons/button-arrow-left.png" alt="arrow left"></button>
-                    <button type="button" class="button__arrow button__arrow_right button__arrow_bc-wild-sand"><img
-                            src="assets/icons/button-arrow-right.png" alt="arrow right"></button>
+                    <div class="top-arrow">
+                        <img class="arrow__top arrow__top_left" src="assets/icons/arrow-left.png" alt="arrow left">
+                        <img class="arrow__top arrow__top_right" src="assets/icons/arrow-right.png" alt="arrow right">
+                    </div>
                     <h3 class="subtitle ">Our Services</h3>
                 </div>
                 <div>
                     <h2 class="heading services__heading">Sed perspiciatis omnis iste natus</h2>
                 </div>
-            </div>
-            <div class="wrapper services__wrap flex flex_wrap flex_content-between">
-                <div class="services__inner">
-                    <article class="services__content">
-                        <img src="assets/icons/car-bay-icon.png" alt="car bay">
-                        <h4 class="headline services__headline">Multi Point Inspections</h4>
-                        <div class="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                            praesentium corrupti quos dolores et quas.
+                <div class="services__wrapper flex flex_wrap flex_content-between">
+                    <div class="services__wrap">
+                        <div class="column services__inner">
+                            <figure class="services__content">
+                                <img src="assets/icons/car-bay-icon.png" alt="car bay">
+                                <figcaption class="services__caption">
+                                    <h4 class="headline services__headline">Multi Point Inspections</h4>
+                                    <div class="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                        blanditiis
+                                        praesentium corrupti quos dolores et quas.
+                                    </div>
+                                </figcaption>
+                            </figure>
                         </div>
-                    </article>
-                </div>
-                <div class="services__inner">
-                    <article class="services__content">
-                        <img src="assets/icons/car-engine-icon.png" alt="car engine">
-                        <h4 class="headline services__headline">Auto Repair</h4>
-                        <div class="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                            praesentium corrupti quos dolores et quas.
+                    </div>
+                    <div class="services__wrap">
+                        <div class="column services__inner">
+                            <figure class="services__content">
+                                <img src="assets/icons/car-engine-icon.png" alt="car engine">
+                                <figcaption class="services__caption">
+                                    <h4 class="headline services__headline">Auto Repair</h4>
+                                    <div class="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                        blanditiis
+                                        praesentium corrupti quos dolores et quas.
+                                    </div>
+                                </figcaption>
+                            </figure>
                         </div>
-                    </article>
-                </div>
-                <div class="services__inner">
-                    <article class="services__content">
-                        <img src="assets/icons/car-breaks-icon.png" alt="car breaks">
-                        <h4 class="headline services__headline">Auto Maintenance</h4>
-                        <div class="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                            praesentium corrupti quos dolores et quas.
+                    </div>
+                    <div class="services__wrap">
+                        <div class="column services__inner">
+                            <figure class="services__content">
+                                <img src="assets/icons/car-breaks-icon.png" alt="car breaks">
+                                <figcaption class="services__caption">
+                                    <h4 class="headline services__headline">Auto Maintenance</h4>
+                                    <div class="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                        blanditiis
+                                        praesentium corrupti quos dolores et quas.
+                                    </div>
+                                </figcaption>
+                            </figure>
                         </div>
-                    </article>
-                </div>
-                <div class="services__inner">
-                    <article class="services__content">
-                        <img src="assets/icons/car-tires-icon.png" alt="car tires">
-                        <h4 class="headline services__headline">Tires </h4>
-                        <div class="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                            praesentium corrupti quos dolores et quas.
+                    </div>
+                    <div class="services__wrap">
+                        <div class="column services__inner">
+                            <figure class="services__content">
+                                <img src="assets/icons/car-tires-icon.png" alt="car tires">
+                                <figcaption class="services__caption">
+                                    <h4 class="headline services__headline">Tires </h4>
+                                    <div class="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                        blanditiis
+                                        praesentium corrupti quos dolores et quas.
+                                    </div>
+                                </figcaption>
+                            </figure>
                         </div>
-                    </article>
-                </div>
-                <div class="services__inner">
-                    <article class="services__content">
-                        <img src="assets/icons/car-engine-check-icon.png" alt="car engine check">
-                        <h4 class="headline services__headline">Service Warranty</h4>
-                        <div class="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                            praesentium corrupti quos dolores et quas.
+                    </div>
+                    <div class="services__wrap">
+                        <div class="column services__inner">
+                            <figure class="services__content">
+                                <img src="assets/icons/car-engine-check-icon.png" alt="car engine check">
+                                <figcaption class="services__caption">
+                                    <h4 class="headline services__headline">Service Warranty</h4>
+                                    <div class="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                        blanditiis
+                                        praesentium corrupti quos dolores et quas.
+                                    </div>
+                                </figcaption>
+                            </figure>
                         </div>
-                    </article>
-                </div>
-                <div class="services__inner">
-                    <article class="services__content">
-                        <img src="assets/icons/car-shopping-icon.png" alt="car shopping">
-                        <h4 class="headline services__headline">Shop Online</h4>
-                        <div class="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                            praesentium corrupti quos dolores et quas.
+                    </div>
+                    <div class="services__wrap">
+                        <div class="column services__inner">
+                            <figure class="services__content">
+                                <img src="assets/icons/car-shopping-icon.png" alt="car shopping">
+                                <figcaption class="services__caption">
+                                    <h4 class="headline services__headline">Shop Online</h4>
+                                    <div class="desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                        blanditiis
+                                        praesentium corrupti quos dolores et quas.
+                                    </div>
+                                </figcaption>
+                            </figure>
                         </div>
-                    </article>
+                    </div>
                 </div>
-            </div>
-            <div class="button__wrapper">
-                <button type="button" class="button button_small">Learn More<img class="arrow arrow_big"
-                        src="assets/icons/button-arrow.png" alt="arrow"></button>
-            </div>
-            <div class="bc__image bc__image_down">
-                <img src="assets/images/gears-down.png" alt="gears">
+                <div class="button-wrapper">
+                    <button type="button" class="button button_small">Learn More<img class="arrow arrow_big"
+                            src="assets/icons/button-arrow.png" alt="arrow"></button>
+                </div>
+                <div class="bc-image bc-image_down">
+                    <img src="assets/images/gears-down.png" alt="gears">
+                </div>
             </div>
         </section>
         <section class="contacts">
             <div class="wrapper flex flex_wrap">
-                <div class="bc__image bc__image_up">
+                <div class="bc-image bc-image_up">
                     <img src="assets/images/gears-up.png" alt="gears">
                 </div>
                 <div class="contacts__box">
@@ -269,69 +305,83 @@
                     <h4 class="headline contacts__headline">customers served (and counting)</h4>
                 </div>
             </div>
-            <div class="bc__image bc__image_down-left bc__image_bottom-78">
+            <div class="bc-image bc-image_down-left bc-image_bottom-78">
                 <img src="assets/images/gears-down.png" alt="gears">
             </div>
         </section>
         <section class="customers">
-            <div class="banner banner__bottom wrapper">
-                <div class="flex banner__subtitle">
-                    <button type="button" class="button__arrow button__arrow_left"><img
-                            src="assets/icons/button-arrow-left.png" alt="arrow left"></button>
-                    <button type="button" class="button__arrow button__arrow_right"><img
-                            src="assets/icons/button-arrow-right.png" alt="arrow right"></button>
-                    <h3 class="subtitle">GALLERY & LIVE STREAMS</h3>
-                </div>
-                <div class="banner__row">
-                    <h2 class="heading">Check out our hard workers</h2>
-                </div>
-                <nav class="banner__nav">
-                    <ul class="banner__list flex flex_content-evenly">
-                        <li class="banner__item"><a href="#">Gallery</a></li>
-                        <li class="banner__item"><a href="#">Live stream: Bay 1</a></li>
-                        <li class="banner__item"><a href="#">Live stream: Bay 2</a></li>
-                        <li class="banner__item"><a href="#">Live stream: Bay 3</a></li>
-                    </ul>
-                </nav>
-                <div class="banner__image banner__image_bottom">
-                    <img src="assets/images/banner-bottom-image.png" alt="inspection">
-                </div>
-            </div>
-            <div class="bc__image bc__image_down-left bc__image_bottom-554">
-                <img src="assets/images/gears-down.png" alt="gears">
-            </div>
-            <div class="customers__box wrapper flex flex_content-between flex_wrap">
-                <div class="customers__wrap customers__wrap_small">
-                    <div class="flex row">
-                        <button type="button" class="button__arrow button__arrow_left button__arrow_bc-wild-sand"><img
-                                src="assets/icons/button-arrow-left.png" alt="arrow left"></button>
-                        <button type="button" class="button__arrow button__arrow_right button__arrow_bc-wild-sand"><img
-                                src="assets/icons/button-arrow-right.png" alt="arrow right"></button>
-                        <h3 class="subtitle">Our CUSTOMERS</h3>
+            <div class="wrapper">
+                <div class="banner banner__bottom">
+                    <div class="flex flex_aling-center banner__subtitle">
+                        <div class="top-arrow">
+                            <img class="arrow__top arrow__top_left" src="assets/icons/arrow-left.png" alt="arrow left">
+                            <img class="arrow__top arrow__top_right" src="assets/icons/arrow-right.png"
+                                alt="arrow right">
+                        </div>
+                        <h3 class="subtitle">GALLERY & LIVE STREAMS</h3>
                     </div>
-                    <div>
-                        <h2 class="heading">Illum qui dolorem eum quo voluptas ut distinctio</h2>
+                    <div class="banner__row">
+                        <h2 class="heading">Check out our hard workers</h2>
+                    </div>
+                    <nav class="banner__nav">
+                        <ul class="banner__nav-list flex flex_content-evenly">
+                            <li class="banner__nav-item banner__nav-item_small"><a href="#">Gallery</a></li>
+                            <li class="banner__nav-item"><a href="#">Live stream: Bay 1</a></li>
+                            <li class="banner__nav-item"><a href="#">Live stream: Bay 2</a></li>
+                            <li class="banner__nav-item"><a href="#">Live stream: Bay 3</a></li>
+                        </ul>
+                    </nav>
+                    <div class="banner__image banner__image_bottom">
+                        <img src="assets/images/banner-bottom-image.png" alt="inspection">
                     </div>
                 </div>
-                <div class="customers__wrap customers__contant">
-                    <div class="desc customers__desc">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod
-                        tempor incididunt
-                        ut labore et dolore ex magna aliqua. Ut enim illum ad minim veniam, quis ea exercitation
-                        ullamco cillum ut enim dolore.”</div>
-                    <div class="flex flex_aling-center">
-                        <img class="customers__image" src="assets/icons/man-icon.png" alt="man">
-                        <div class="desc desc_name">Cullen Bohannon</div>
-                    </div>
+                <div class="bc-image bc-image_down-left bc-image_bottom-554">
+                    <img src="assets/images/gears-down.png" alt="gears">
                 </div>
-                <div class="customers__wrap customers__contant">
-                    <div class="desc customers__desc">“Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium
-                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi ipsam voluptatem aspernatur.”</div>
-                    <div class="flex flex_aling-center">
-                        <img class="customers__image" src="assets/icons/woman-icon.png" alt="woman">
-                        <div class="desc desc_name">Jennifer Thomas</div>
+                <div class="customers__box flex flex_content-between flex_wrap">
+                    <div class="customers__wrap">
+                        <div class="column customers__wrap_small">
+                            <div class="flex flex_aling-center wrap">
+                                <div class="top-arrow">
+                                    <img class="arrow__top arrow__top_left" src="assets/icons/arrow-left.png"
+                                        alt="arrow left">
+                                    <img class="arrow__top arrow__top_right" src="assets/icons/arrow-right.png"
+                                        alt="arrow right">
+                                </div>
+                                <h3 class="subtitle">Our CUSTOMERS</h3>
+                            </div>
+                            <div>
+                                <h2 class="heading">Illum qui dolorem eum quo voluptas ut distinctio</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customers__wrap">
+                        <div class="column customers__contant">
+                            <div class="desc customers__desc">“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed
+                                do
+                                eiusmod
+                                tempor incididunt
+                                ut labore et dolore ex magna aliqua. Ut enim illum ad minim veniam, quis ea exercitation
+                                ullamco cillum ut enim dolore.”</div>
+                            <div class="flex flex_aling-center">
+                                <img class="customers__image" src="assets/icons/man-icon.png" alt="man">
+                                <div class="desc desc_name">Cullen Bohannon</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customers__wrap">
+                        <div class="column customers__contant">
+                            <div class="desc customers__desc">“Sed ut perspiciatis unde omnis iste natus error sit
+                                voluptatem
+                                accusantium
+                                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                                quasi ipsam voluptatem aspernatur.”</div>
+                            <div class="flex flex_aling-center">
+                                <img class="customers__image" src="assets/icons/woman-icon.png" alt="woman">
+                                <div class="desc desc_name">Jennifer Thomas</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -341,11 +391,12 @@
                 <div class="impact__image">
                     <img src="assets/images/impact-image.png" alt="car">
                 </div>
-                <div class="flex">
-                    <button type="button" class="button__arrow button__arrow_left"><img
-                            src="assets/icons/button-arrow-left.png" alt="arrow left"></button>
-                    <button type="button" class="button__arrow button__arrow_right"><img
-                            src="assets/icons/button-arrow-right-alto.png" alt="arrow right"></button>
+                <div class="flex flex_aling-center">
+                    <div class="top-arrow">
+                        <img class="arrow__top arrow__top_left" src="assets/icons/arrow-left.png" alt="arrow left">
+                        <img class="arrow__top arrow__top_right" src="assets/icons/arrow-right-alto.png"
+                            alt="arrow right">
+                    </div>
                     <h3 class="subtitle subtitle_color-alto">OUR IMPACT</h3>
                 </div>
                 <div class="impact__inner">
@@ -390,61 +441,77 @@
                 </div>
             </div>
         </section>
+        <section class="bottom">
+            <div class="wrapper">
+                <div class="bottom__wrap flex flex_wrap flex_content-between">
+                    <div class="bottom__inner">
+                        <div class="bottom__left">
+                            <div class="logo">
+                                <img src="assets/images/bottom-logo.png" alt="logoipsum">
+                            </div>
+                            <div class="bottom__text">This is a blurb about the company sed do eiusmod tempor incididunt
+                                ut
+                                labore
+                                et dolore ex magna aliqua. </div>
+                            <div class="bottom__social flex">
+                                <a href=""><img src="assets/icons/facebook-icon.png" alt="facebook"></a>
+                                <a href=""><img src="assets/icons/twitter-icon.png" alt="twitter"></a>
+                                <a href=""><img src="assets/icons/instagram-icon.png" alt="instagram"></a>
+                                <a href=""><img src="assets/icons/youtube-icon.png" alt="youtube"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom__inner">
+                        <div class="bottom__center">
+                            <div class="bottom__text bottom__text_subtitle">EXPLORE LINKS</div>
+                            <nav class="bottom__nav">
+                                <ul class="flex flex_wrap">
+                                    <li class="bottom__nav-item flex_basis-50"><a href="">About</a></li>
+                                    <li class="bottom__nav-item flex_basis-50"><a href="">Reviews</a></li>
+                                    <li class="bottom__nav-item flex_basis-50"><a href="">Services</a></li>
+                                    <li class="bottom__nav-item flex_basis-50"><a href="">Shop</a></li>
+                                    <li class="bottom__nav-item flex_basis-50"><a href="">Specials</a></li>
+                                    <li class="bottom__nav-item flex_basis-50"><a href="">Careers</a></li>
+                                    <li class="bottom__nav-item flex_basis-50"><a href="">Estimates</a></li>
+                                    <li class="bottom__nav-item flex_basis-50"><a href="">FAQs</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="bottom__inner">
+                        <div class="bottom__right">
+                            <div class="bottom__text bottom__text_subtitle">CONTACT</div>
+                            <nav class="bottom__nav bottom__nav_right">
+                                <ul>
+                                    <li class="flex bottom__nav-item bottom__nav-item_right"><a href=""><img
+                                                src="assets/icons/place-icon.png" alt="map">321 Pikes Place
+                                            Parkwa<br>Seattle,
+                                            WA
+                                            54321</a></li>
+                                    <li class="flex bottom__nav-item bottom__nav-item_right"><a
+                                            href="tel:(555) 765-4321"><img src="assets/icons/smartphone-icon.png"
+                                                alt="smartphone">(555) 765-4321</a></li>
+                                    <li class="flex bottom__nav-item bottom__nav-item_right"><a
+                                            href="maitto:Info@company.com"><img src="assets/icons/email-icon.png"
+                                                alt="email">Info@company.com</a></li>
+                                    <li class="flex bottom__nav-item bottom__nav-item_right bottom__nav-item_bold"><img
+                                            src="assets/icons/timer-icon.png" alt="timer">Mon - Sat: 7:000 am - 6:00 pm
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
-        <div class="footer__wrap wrapper flex flex_wrap flex_content-between">
-            <div class="footer__left">
-                <div class="logo">
-                    <img src="assets/images/footer-logo.png" alt="logoipsum">
-                </div>
-                <div class="footer__text">This is a blurb about the company sed do eiusmod tempor incididunt ut labore
-                    et dolore ex magna aliqua. </div>
-                <div class="footer__social flex">
-                    <a href=""><img src="assets/icons/facebook-icon.png" alt="facebook"></a>
-                    <a href=""><img src="assets/icons/twitter-icon.png" alt="twitter"></a>
-                    <a href=""><img src="assets/icons/instagram-icon.png" alt="instagram"></a>
-                    <a href=""><img src="assets/icons/youtube-icon.png" alt="youtube"></a>
-                </div>
+        <div class="footer__wrapper flex flex_content-between">
+            <div class="footer__text"><a href="#">Tagline lorem ipsum dolor sit amet, consectetur adipiscing eiusmod</a>
             </div>
-            <div class="footer__center">
-                <div class="footer__text footer__text_subtitle">EXPLORE LINKS</div>
-                <nav class="footer__nav">
-                    <ul class="flex flex_wrap">
-                        <li class="footer__item flex_basis-50"><a href="">About</a></li>
-                        <li class="footer__item flex_basis-50"><a href="">Reviews</a></li>
-                        <li class="footer__item flex_basis-50"><a href="">Services</a></li>
-                        <li class="footer__item flex_basis-50"><a href="">Shop</a></li>
-                        <li class="footer__item flex_basis-50"><a href="">Specials</a></li>
-                        <li class="footer__item flex_basis-50"><a href="">Careers</a></li>
-                        <li class="footer__item flex_basis-50"><a href="">Estimates</a></li>
-                        <li class="footer__item flex_basis-50"><a href="">FAQs</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="footer__right">
-                <div class="footer__text footer__text_subtitle">CONTACT</div>
-                <nav class="footer__nav footer__nav_right">
-                    <ul>
-                        <li class="flex footer__item footer__item_right"><a href=""><img
-                                    src="assets/icons/place-icon.png" alt="map">321 Pikes Place Parkway <p>Seattle, WA
-                                    54321</p></a></li>
-                        <li class="flex footer__item footer__item_right"><a href="tel:(555) 765-4321"><img
-                                    src="assets/icons/smartphone-icon.png" alt="smartphone">(555) 765-4321</a></li>
-                        <li class="flex footer__item footer__item_right"><a href="maitto:Info@company.com"><img
-                                    src="assets/icons/email-icon.png" alt="email">Info@company.com</a></li>
-                        <li class="flex footer__item footer__item_right footer__item_bold"><img
-                                src="assets/icons/timer-icon.png" alt="timer">Mon - Sat: 7:000 am - 6:00 pm</li>
-                    </ul>
-                </nav>
-            </div>
+            <div class="footer__text"><a href="#">© 2018 Company. Privacy Policy | Terms & Conditions</a></div>
         </div>
     </footer>
-    <section class="bottom">
-        <div class="bottom__wrapper flex flex_content-between">
-            <div class="bottom__text">Tagline lorem ipsum dolor sit amet, consectetur adipiscing eiusmod</div>
-            <div class="bottom__text">© 2018 Company. Privacy Policy | Terms & Conditions</div>
-        </div>
-    </section>
 
 </body>
 

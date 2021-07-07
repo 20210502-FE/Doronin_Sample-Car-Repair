@@ -35,7 +35,6 @@
     }
 
     &__form {
-
         @include respond-to(phone-only) {
             justify-content: space-evenly;
         }

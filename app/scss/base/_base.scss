@@ -41,6 +41,11 @@
     }
   }
 
+  .top-arrow {
+    width: 17px;
+    display: flex;
+  }
+
   .arrow {
     max-width: 43px;
     vertical-align: middle;
@@ -56,6 +61,25 @@
 
       @include respond-to(phone-only) {
         max-width:30px;
+      }
+    }
+
+    &__top {
+      &_left {
+        position: relative;
+        top: 3px;
+        left: 1px;
+        height: 8px;
+        width: auto;
+      }
+
+      &_right {
+        height: 14px;
+        width: auto;
+      }
+  
+      &_bc-wild-sand {
+          background-color: $color-wild-sand;
       }
     }
   }
@@ -80,21 +104,24 @@
       margin-bottom: 33px;
 
       @include respond-to(phone-only) {
-      justify-content: center;
-      margin-left: 0;
-      margin-bottom: 15px;
+        justify-content: center;
+        margin-left: 0;
+        margin-bottom: 15px;
       }
     }
 
     &__image {
       max-width: 846px;
       position: absolute;
-      left: 87px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
       bottom: -120px;
 
       @include respond-to(phone-only) {
         width: calc(100% - 50px);
         margin: 0 auto;
+        margin-top: 20px;
         position: absolute;
         left: 0;
         right: 0;
@@ -102,7 +129,6 @@
       }
 
       &_bottom {
-        
         @include respond-to(phone-only) {
           top: 250px;
         }
@@ -124,7 +150,7 @@
       line-height: 16px;
       letter-spacing: 1.5px;
       margin-left: 10px;
-      }
+    }
 
     &_color-alto {
       color: $color-alto;
@@ -189,7 +215,7 @@
     width: 324px;
   }
 
-  .row {
+  .wrap{
     margin-bottom: 33px;
 
     @include respond-to(phone-only) {

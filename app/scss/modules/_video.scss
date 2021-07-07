@@ -1,6 +1,11 @@
 .video {
     position: relative;
 
+    @include respond-to(phone-only) {
+        max-width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+    
     &__content {
         position: absolute;
         top: 112px;

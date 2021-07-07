@@ -21,7 +21,7 @@
         @include respond-to(phone-only) {
             width: calc(100% - 50%);
             top: -82px;
-            right: 0;
+            right: 10px;
         }
     }
 
@@ -36,6 +36,7 @@
     }
 
     &__holder {
+        margin: 0 -15px;
 
         @include respond-to(phone-only) {
             justify-content: center;
@@ -43,7 +44,8 @@
     }
 
     &__block {
-        width: 237px;
+        width: 260px;
+        padding: 0 15px;
 
         @include respond-to(phone-only) {
             margin-bottom: 15px;

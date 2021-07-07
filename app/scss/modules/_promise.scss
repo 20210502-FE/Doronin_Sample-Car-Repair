@@ -1,5 +1,4 @@
 .banner {
-
     &__top {
         padding-bottom: 354px;
 
@@ -37,14 +36,10 @@
 
     &__holder {
         margin-top: 150px;
-
-        @include respond-to(phone-only) {
-            margin-top: 70px;
-        }
     }
 
     &__content {
-        margin-top: 68.5px;
+        margin: 68.5px -13.5px 0 -13.5px;
 
         @include respond-to(phone-only) {
             margin-top: 48.5px;
@@ -59,7 +54,8 @@
     }
 
     &__inner {
- 
+        padding: 0 13.5px;
+
         @include respond-to(phone-only) {
             margin-bottom: 20px;
         }
@@ -70,7 +66,6 @@
     }
 
     &__desc {
-
         @include respond-to(phone-only) {
             text-align: start;
         } 

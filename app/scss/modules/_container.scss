@@ -13,7 +13,6 @@
     }
 
     &__button {
- 
         @include respond-to(phone-only) {
             display: flex;
             justify-content: center;
