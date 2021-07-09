@@ -138,6 +138,12 @@ img {
   position: relative;
 }
 
+.arrow-down {
+  width: 8px;
+  height: 6px;
+  margin-left: 5px;
+}
+
 .banner {
   padding-top: 100px;
   background-color: #FFFFFF;
@@ -377,12 +383,6 @@ img {
   }
 }
 
-.button__arrow-down {
-  border: none;
-  background-color: transparent;
-  margin-left: 5px;
-}
-
 .button__play {
   max-width: 140px;
   max-height: 140px;
@@ -483,15 +483,15 @@ img {
 .holder {
   background-color: #FFFFFF;
   position: absolute;
-  top: 94px;
+  top: 98px;
   left: 0;
   right: 0;
 }
 
 @media only screen and (max-width: 599px) {
   .holder {
+    top: 65px;
     background-color: transparent;
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-end;
@@ -502,15 +502,15 @@ img {
   display: none;
 }
 
-.holder input:checked + label > .header__label-menu {
+.holder input:checked + label > .holder__label-menu {
   display: none;
 }
 
-.holder input:checked + label > .header__label-cross {
+.holder input:checked + label > .holder__label-cross {
   display: flex;
 }
 
-.holder input:checked ~ .header__nav {
+.holder input:checked ~ .holder__nav {
   opacity: 1;
   visibility: visible;
 }
@@ -595,13 +595,16 @@ img {
   line-height: 22px;
   text-align: center;
   letter-spacing: 0.15px;
+  color: #02133C;
 }
 
 @media only screen and (max-width: 599px) {
   .holder__nav-item {
-    margin: 5px 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
     font-size: 13px;
     line-height: 12px;
+    color: #FFFFFF;
   }
 }
 
@@ -654,7 +657,8 @@ img {
     font-size: 40px;
     line-height: 40px;
     max-width: 100%;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     text-align: center;
   }
 }
